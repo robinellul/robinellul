@@ -1,0 +1,199 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+   font-size:16px;
+}
+
+img,
+iframe {
+max-width: 100%;
+height: auto;
+/* so that aspect ratio is kept even if height is declared in markup */ 
+border: 0;
+/* this stops a border if the image is inside a link */
+}
+
+/* This is a CSS comment.
+Always comment your work to explain what you're doing */ 
+body {
+font-family: arial, sans-serif;
+}
+
+/*
+background color defaults
+Note that HTML and CSS use American spelling (color not colour). */
+
+header {
+       background-color: blue;
+       }
+/* Note that if we want a number of different elements to have the same style, we just comma separate them. */
+header, footer {
+               text-align: center;
+               }
+
+/* TYPOGRAPHY*/
+
+h1 {
+    font-size:70px;
+    color: #7b2d26; 
+    text-transform: uppercase;
+	   font-family: "Pirata One", system-ui;
+	text-align: center;
+   } 
+h2 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif; 
+	color: #0b7a75;
+
+   }
+p{
+	color: #19535f;
+}
+li{
+	color: #500506;
+}
+h1,h2,p,li {
+            padding-bottom: 10px; 
+           }
+
+
+.item {
+       background-color: #d7c9aa;
+       padding:1%;
+       margin:1%; 
+       margin-bottom: 20px; 
+       margin-top: 20px; 
+       border-radius:10px;
+	
+}
+img {
+	align-self: center;
+}
+/* let's bring the width in a little */
+/* check it out - we're responsive without even trying! */ 
+main {
+/* There's rarely any time you should set an explicit width. Always use max-width wherever possible. */
+     max-width: 1000px;
+/* Change the above to width: 1000px and see what happens with responsive */
+     margin-left: auto;
+     margin-right: auto; 
+      }
+
+/* let's talk about nesting */ 
+.item li {
+          margin-left: 25px;
+}
+blockquote {
+text-transform: uppercase; 
+font-style: italic;
+}
+
+
+nav {
+text-align: center;
+}
+nav li {
+display: inline-block;
+}
+/* nav li a, or nav a ?? */ nav a {
+background: white; 
+color: black;
+padding: 5px; 
+text-decoration: none; 
+border-radius: 5px;
+	
+}
+nav a:hover {
+background: orange;
+}
+body {
+background-image: url("images/Background sky.jpg"); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+
+
+
+
+/* New Nav */
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #7b2d26;
+}
+
+.navbar a:hover, .dropdown:hover  {
+  background-color: #0b7a75;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #d7c9aa;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration:none;
+  display: block;
+  text-align: left;
+	font-weight: bold;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* centre image*/
+.imgcenter{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.imgcenter2{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
